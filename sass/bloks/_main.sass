@@ -1,0 +1,111 @@
+.page__main
+
+.main
+
+.main__container
+  position: relative
+.main__container:before
+  content: ''
+  position: absolute
+  width: 100%
+  height: 100%
+  right: 266px
+  top: 0px
+  transform: translate(100%, 0px)
+  background: #EC5863
+  border-radius: 30px 0px 0px 30px
+
+.main__body
+  padding: 153px 0 50px
+  display: flex
+  align-items: center
+
+.main__content,
+.main__images
+  flex: 0 1 50%
+  z-index: 5
+.main__images img
+  max-width: 100%
+.main__header
+  padding-right: 20px
+  max-width: 410px
+.content-block
+
+.main__title span
+  color: $blue
+.title
+  font-weight: 700
+  font-size: 44px
+  line-height: 126%
+  color: $dark
+.title:not(:last-child)
+  margin-bottom: 12px
+
+.main__text
+  max-width: 360px
+.text
+  font-weight: 400
+  font-size: 12px
+  line-height: 138.5%
+  letter-spacing: 0.08em
+  color: $text
+.text:not(:last-child)
+  margin-bottom: 24px
+.main__button
+
+.button
+
+.button-pink
+  background: #EC5863
+.button-pink:hover
+  background: #f42e3b
+.main__video
+.video-main
+  display: flex
+  align-items: center
+  gap: 12px
+  padding-bottom: 50px
+
+.video-main__icon
+  position: relative
+  &:hover img
+    max-width: 100%
+    transform: scale(1.1)
+    transition: all 0.3s ease 0s
+
+.video-main__body
+
+.video-main__title
+  font-weight: 400
+  font-size: 13px
+  line-height: 126%
+  letter-spacing: 0.08em
+  color: #B0B0B0
+  margin-bottom: 5px
+.video-main__text
+  font-size: 9px
+  line-height: 126%
+  letter-spacing: 0.165em
+  text-transform: uppercase
+  color: #000000
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .main__container:before
+    right: 206px
+/*mobile*/
+@media ( max-width: 767.98px)
+  .main__body
+    flex-direction: column
+  .content-block
+    padding: 0
+    margin-bottom: 20px
+@media ( max-width: 479.98px )
+  .main
+
+    &__container:before
+      display: none
+    &__body
+      padding: 100px 0 30px
+  // .video-main
+  //   margin-bottom: 20px

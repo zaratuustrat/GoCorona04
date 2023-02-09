@@ -1,0 +1,120 @@
+.page__healthcare
+
+.healthcare
+  padding: 80px 0 40px
+.healthcare__container
+
+.healthcare__header
+  text-align: center
+.healthcare__header:not(last-child)
+  margin-bottom: 50px
+
+.content-block
+
+.healthcare__title span
+  color: $red
+
+.healthcare__text
+  max-width: 600px
+  margin: 0 auto
+
+.healthcare__text:not(:last-child)
+  margin-bottom: 50px
+
+.healthcare__items
+  display: flex
+  justify-content: center
+  padding: 0 30px
+  gap: 72px
+
+.healthcare__column
+  position: relative
+  flex: 0 1 33.333%
+
+.healthcare__item
+  height: 100%
+  padding: 36px 18px
+  background: #FFFFFF
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18)
+  border-radius: 8px
+
+.item-healthcare
+  display: flex
+  flex-direction: column
+  align-items: center
+.item-healthcare__icon
+.item-healthcare__icon:not(last-child)
+  margin-bottom: 58px
+
+.item-healthcare__title
+  font-weight: 700
+  font-size: 16px
+  line-height: 138.5%
+  letter-spacing: 0.08em
+  color: $dark
+  margin-bottom: 5px
+
+.item-healthcare__text
+  text-align: center
+  font-weight: 400
+  font-size: 12px
+  line-height: 138.5%
+  letter-spacing: 0.08em
+  color: $text
+
+.healthcare__column-1:before,
+.healthcare__column-1:after,
+.healthcare__column-2:before,
+.healthcare__column-3:before
+  content: ''
+  position: absolute
+  background: #EC5863
+  border-radius: 16px
+  transform: rotate(-30deg)
+  z-index: -1
+.healthcare__column-1:before
+  left: -23px
+  bottom: -30px
+  width: 65px
+  height: 65px
+
+.healthcare__column-1:after
+  right: -40px
+  top: 41px
+  width: 96px
+  height: 96px
+  transform: rotate(105deg)
+  border-radius: 30px
+
+.healthcare__column-2:before
+  width: 127px
+  height: 127px
+  right: -80px
+  bottom: -30px
+  border-radius: 30px
+
+.healthcare__column-3:before
+  width: 65px
+  height: 65px
+  top: -30px
+  right: -23px
+/*pc*/ 
+@media ( max-width: 1087px)
+  .healthcare__items
+    padding: 0
+    gap: 30px
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+
+/*mobile*/
+@media ( max-width: 767.98px)
+
+  .healthcare
+    padding: 40px 0 40px
+  .healthcare__items
+    flex-direction: column
+  .healthcare__column-3:before
+    left: 0px
+    top: 208px
+@media ( max-width: 479.98px )
